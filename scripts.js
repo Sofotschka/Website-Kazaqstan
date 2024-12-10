@@ -56,6 +56,10 @@ window.onload = function () {
         document.getElementById("textbox3").value = "";
 
     }
+    if (window.location.href.includes("logIn")) {
+        document.getElementById("textbox1").value = "";
+        document.getElementById("textbox2").value = "";
+    }
 }
 
 function update() {
@@ -175,6 +179,28 @@ function sendMessage() {
         document.getElementById("errorMessage").style.display = "none"
     }
 
+}
+
+//loggin into account
+
+function logIn() {
+    if (document.getElementById("textbox1").value == "" ||
+        document.getElementById("textbox2").value == "") {
+        document.getElementById("textbox1").style.borderColor = "red";
+        document.getElementById("textbox2").style.borderColor = "red";
+
+        // show error message
+
+        document.getElementById("errorMessage").style.display = "block";
+    }
+    if (document.getElementById("textbox1").value != "" &&
+        document.getElementById("textbox2").value != "") {
+        document.getElementById("textbox1").style.display = "none";
+        document.getElementById("textbox2").style.display = "none";
+        document.querySelector("button").style.display = "none";
+        document.getElementById("logInMessage").style.display = "block";
+        document.getElementById("errorMessage").style.display = "none"
+    }
 }
 
 

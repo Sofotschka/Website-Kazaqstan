@@ -44,6 +44,16 @@ nav {
     background-image: url(https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/wallpaper_nier_automata_01_1920x1080.jpg);
 }
 
+.logInBody {
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    background-image: url(https://img1.wallspic.com/previews/1/2/0/6/6/166021/166021-ilya_kuvshinov_twewy-the_world_ends_with_you-neo_the_world_ends_with_you-illustration-art-x750.jpg);
+
+}
+
 /*heading design with different font*/
 .heading {
     align-items: center;
@@ -192,6 +202,18 @@ button {
     margin-top: 20px;
     padding: 8px;
     border-radius: 10px;
+}
+
+.textButton{
+    color: black;
+    background-color: transparent;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: large;
+    margin-top: 20px;
+    padding-bottom: 8px;
+    border: none;
+    text-decoration: underline;
+
 }
 
 footer {
